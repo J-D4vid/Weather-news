@@ -1,0 +1,195 @@
+*{
+    font-family: croissant One;
+    margin: 0;
+    padding: 0;
+    transition: .8s; /* Class transition */
+    -moz-transition: .8s; /* Firefox 4 */
+    -webkit-transition: .8s; /* Safari and Chrome */
+    -o-transition: .8s; 
+    text-decoration: none;
+}
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    background: rgba(196, 251, 255, 0.356);
+}
+i.size-48 {
+    font-size: 48px;
+    font-variation-settings: 'OPSZ' 48;
+}
+.theme{
+    background-color: rgb(68, 238, 224);
+    box-shadow: 0px 1px 1px rgba(97, 97, 97, 0.753);
+    width: 2vw;
+    height: 3vh;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+    margin: 2vh 0vw 0vh .5vw;
+}
+#dark{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;
+}
+header{
+    background:linear-gradient(to bottom right, rgba(73, 228, 215),white );
+    position: sticky;
+    top: 0%;
+    padding: 0vh 2vw 1vh 2vw;
+    height: 7vh;
+    width: 96vw;
+    display: flex;
+    justify-content: space-between; 
+    box-shadow: 3px 1px 5px rgba(68, 67, 67, 0.712);
+    z-index: 100;
+}
+#title{
+    color: aliceblue;
+}
+#search_filter{
+    width: 30vw;
+    height: 4.5vh;
+    border-radius: 20px;
+    border: none;
+    margin: 1.5vh 10vw 0vh 0vw;
+    padding-left: 1vw;
+}
+#search_filter:placeholder-shown{
+    padding-left: 2vw;
+}
+input[type="submit"]{
+    display: none;
+
+}
+#body{
+    height: 100%;
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 4vh;
+    display: none;
+}
+.label{
+    border-bottom:2px solid rgb(158, 186, 247);
+    color: rgb(25, 85, 104);
+}
+#temp-sensacao-termica{
+    width: 60%;
+    height: 100%;
+    margin-right: 1vw;
+}
+#temperatura{
+    background: linear-gradient(to bottom left,  rgba(5, 223, 204, 0.829),#fff);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
+    width: 32vw;
+    height: 36vh;
+    border-radius: 10px;
+    display: block;
+    padding: 2vh 2vw 2vh 2vw;
+}
+#visual{
+    display: none;
+    height: 20vh;
+    justify-content: space-between;
+    
+}
+#country{
+    display: block;
+    text-align: left;
+}
+#data-temp{
+    font-size: 7vh;
+}
+#flag_img{
+    width: 5vw;
+    height: 10vh;
+}
+#condition_img{
+    margin-left: 4vw;
+    width: 8vw;
+    height: 16vh;
+}
+#sensacao-termica{
+    background: linear-gradient(to top left,  rgba(5, 223, 204, 0.829),#fff);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
+    width: 32vw;
+    height: 16vh;
+    border-radius: 10px;
+    margin-top: 2vh;
+    padding: 2vh 2vw 2vh 2vw;
+}
+.data{
+    margin-top: 1vh;
+    font-size: 4vh;
+}
+#velvento-umidade{
+    width: 40%;
+    height: 100%;
+}
+#umidade{
+    background: linear-gradient(to bottom right, rgba(5, 223, 204, 0.829), rgba(73, 228, 215, 0.445),#fff);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
+    width: 11vw;
+    height: 12vh;
+    border-radius: 10px;
+    margin-top:2vh ;    
+    padding: 2vh 2vw 2vh 2vw;
+}
+#vel-vento{
+    background: linear-gradient(to top right, rgba(5, 223, 204, 0.829), rgba(73, 228, 215, 0.445),#fff);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
+    width: 11vw;
+    height: 16vh;
+    border-radius: 10px;
+    margin-top:2vh ;
+    padding: 2vh 2vw 2vh 2vw;   
+}
+#place{
+    background: linear-gradient(to top right, rgba(5, 223, 204, 0.829), rgba(73, 228, 215, 0.445),#fff);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
+    width: 11vw;
+    height: 19vh;
+    border-radius: 10px;
+    padding: 1vh 2vw 2vh 2vw;   
+}
+.mundo{
+    width: 600px;
+    height:600px;
+    margin: 10vh 33vw;
+    border-radius: 100%;
+    transform: rotate(20deg);
+    
+}       
+@keyframes vanish {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.4); 
+        visibility: hidden;
+    }
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.vanish{
+    animation: vanish 1s;
+    visibility: hidden;
+    pointer-events: none;
+}
+.show{
+    animation: show 1s;
+}
+div:hover{
+    transform: scale(1.03);
+}

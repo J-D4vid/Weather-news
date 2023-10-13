@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Satisfy&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link id="theme-select" rel="stylesheet" href="theme.css">
+    <script src="js/teste copy.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+            <h1 id="title">weather news</h1>
+        
+        <div id="search">
+            <form action="">
+                <input type="text" name="search" id="search_filter" placeholder="Que cidade procuras?">
+                <input type="submit" value="procurar" id = 'button_search'>
+            </form>
+           
+        </div>
+        <div>
+        <button  id="light" class="theme"><i class="material-symbols-outlined">light</i></button>
+        <button id="dark" class="theme"><i class="material-symbols-outlined">nightlight</i></button>
+        </div>
+    </header>
+
+    <div id="world">
+        <img class="mundo" src="./assets/fdf4ac748a477d4c67a0332d6ba9a8de.gif" alt="">
+    </div>
+    <section id="body">
+        <section id="temp-sensacao-termica">
+            <div id="temperatura">
+                <h3 class="label temp">temperatura</h3>
+                <div id="visual">
+                    <img src="" alt="" id="condition_img">
+                    
+                </div>
+                <h1 class="data" id="data-temp"></h1>
+                
+            </div>
+            <div id="sensacao-termica">
+                <h3 class="label">sensação térmica</h3>
+                <h1 class="data" id="data-sens-termica"></h1>
+            </div>
+        </section>
+        <section id="velvento-umidade">
+            <div id="place">
+                <h3 class="label">localização</h3>
+                <div id="country">
+                    <img src="" alt="" id="flag_img">
+                    <h5 id="p-name">país</h5>
+                    <h5 id="e-name">país</h5>
+                </div>
+            </div>
+            <div id="umidade">
+                <h3 class="label">umidade</h3>
+                <h1 class="data" id="data-umidade"></h1>
+            </div>
+            <div id="vel-vento">
+                <h3 class="label">velocidade<br> do vento</h3>
+                <h1 class="data" id="data-vel-vento"></h1>
+            </div>
+           
+        </section>
+
+        
+
+    </section>
+    
+
+ 
+        
+
+</body>
+</html>
